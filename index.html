@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Интерактивный цифровой гид по пассивной безопасности, расчету физики торможения и подбору экипировки для пользователей СИМ и велосипедов.">
+    <title>Шлем спасает жизнь — Интерактивная веб-брошюра и симулятор безопасности СИМ</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">
+                <span class="logo__text">Безопасный СИМ</span>
+            </a>
+            <nav class="nav">
+                <a href="#rules">Правила ПДД</a>
+                <a href="#testdrive">Симулятор торможения</a>
+                <a href="#anatomy">Выбор экипировки</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="badge-hero">
+                Цифровой гид и симулятор пассивной безопасности
+            </div>
+            <h1>Шлем спасает <span>жизнь</span></h1>
+            <p>Интерактивное руководство по физике движения, нормам ПДД РФ и технологиям пассивной защиты водителей средств индивидуальной мобильности и велосипедов.</p>
+            
+            <div class="hero-actions">
+                <a href="#testdrive" class="btn btn--primary">Испытать в симуляторе</a>
+                <a href="#calculator" class="btn btn--outline">Подобрать размер шлема</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="num">25 км/ч</div>
+                    <div class="desc">Порог скорости по ПДД РФ</div>
+                </div>
+                <div class="stat-item">
+                    <div class="num" style="color: var(--accent-blue);">в 3.5 раза</div>
+                    <div class="desc">Гашение перегрузки шлемом</div>
+                </div>
+                <div class="stat-item">
+                    <div class="num" style="color: var(--accent-red);">1700 Дж</div>
+                    <div class="desc">Кинетическая энергия падения</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="rules">
+        <div class="container">
+            <div class="section-header">
+                <h2>6 правил безопасного вождения СИМ</h2>
+                <p>Требования ПДД РФ (ГОСТ Р 59882-2021) и законов механики для всех типов индивидуального микротранспорта.</p>
+            </div>
+
+            <div class="grid-cards">
+                <div class="card-glowing">
+                    <div class="card-icon-wrap">1</div>
+                    <h3>Приоритет пешехода</h3>
+                    <p>На тротуарах, пешеходных дорожках и в жилых зонах пешеход всегда имеет безусловный приоритет. Скорость СИМ ограничивается скоростью потока.</p>
+                    <span class="legal-ref">ПДД РФ п. 24.6</span>
+                </div>
+
+                <div class="card-glowing">
+                    <div class="card-icon-wrap">2</div>
+                    <h3>Один райдер на одно СИМ</h3>
+                    <p>Перевозить пассажиров на СИМ запрещено, если это не предусмотрено заводом. Второй человек смещает центр тяжести вверх, провоцируя опрокидывание.</p>
+                    <span class="legal-ref">ПДД РФ п. 24.8</span>
+                </div>
+
+                <div class="card-glowing">
+                    <div class="card-icon-wrap">3</div>
+                    <h3>Спешивание на переходе</h3>
+                    <p>Пересекать проезжую часть по пешеходному переходу разрешено исключительно пешком, ведя самокат или электровелосипед рядом со своей стороны.</p>
+                    <span class="legal-ref">ПДД РФ п. 24.8</span>
+                </div>
+
+                <div class="card-glowing">
+                    <div class="card-icon-wrap">4</div>
+                    <h3>Лимит скорости 25 км/ч</h3>
+                    <p>Законодательный предел скорости для СИМ в городах. При превышении порога 25 км/ч тормозной путь возрастает в квадратичной зависимости.</p>
+                    <span class="legal-ref">ПДД РФ п. 24.6</span>
+                </div>
+
+                <div class="card-glowing">
+                    <div class="card-icon-wrap">5</div>
+                    <h3>Свет и фары в сумерках</h3>
+                    <p>В темное время суток на СИМ должна быть включена передняя фара и задний красный габарит. Это увеличивает видимость для водителей до 140 метров.</p>
+                    <span class="legal-ref">ПДД РФ п. 24.5</span>
+                </div>
+
+                <div class="card-glowing">
+                    <div class="card-icon-wrap">6</div>
+                    <h3>Шлем стандарта EN 1078</h3>
+                    <p>Шлем снижает пиковую перегрузку головы при соударении с твердым асфальтом в 3.5 раза за счет контролируемого сминания пенополистирола (EPS).</p>
+                    <span class="legal-ref">ГОСТ Р 59882-2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="testdrive">
+        <div class="container">
+            <div class="section-header">
+                <h2>Математический симулятор торможения СИМ</h2>
+                <p>Физический расчет остановочного пути и кинетической энергии удара при разном состоянии дорожного полотна.</p>
+            </div>
+
+            <div class="sim-grid">
+                <div class="sim-sidebar">
+                    <div class="control-panel">
+                        <label>Скорость движения: <span id="speed-label" style="color: var(--accent-blue); font-weight:800;">20 км/ч</span></label>
+                        <input type="range" id="speed-input" min="10" max="35" value="20" style="width: 100%; accent-color: var(--accent-blue); cursor:pointer;">
+                    </div>
+                    <div class="control-panel">
+                        <label>Дорожное покрытие</label>
+                        <select id="road-input" class="custom-select">
+                            <option value="0.7">Сухой асфальтобетон (коэф. f = 0.70)</option>
+                            <option value="0.4">Мокрый асфальт после дождя (f = 0.40)</option>
+                            <option value="0.15">Период заморозков / Гололед (f = 0.15)</option>
+                        </select>
+                    </div>
+                    <button class="btn btn--accent" id="btn-launch-sim" style="width: 100%;">Запустить тест-драйв</button>
+                </div>
+
+                <div class="sim-track-display">
+                    <div class="track-canvas">
+                        <div class="alert-box" id="alert-sign">ЭКСТРЕННОЕ ТОРМОЖЕНИЕ!</div>
+                        
+                        <div class="road-asphalt">
+                            <div class="road-stripes"></div>
+                        </div>
+
+                        <div class="track-ruler">
+                            <span>0 м</span>
+                            <span>4 м</span>
+                            <span>8 м</span>
+                            <span>12 м</span>
+                            <span>16 м</span>
+                            <span>20 м</span>
+                        </div>
+                        
+                        <svg id="scooter-sprite" class="player-scooter" viewBox="0 0 70 50" width="65" height="46">
+                            <circle cx="8" cy="38" r="5" fill="#DE350B" class="brake-light-glow"/>
+                            <circle cx="8" cy="38" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="14" cy="38" r="8" fill="#0A2540" stroke="#5E6C84" stroke-width="2"/>
+                            <circle cx="14" cy="38" r="4" fill="#DFE1E6"/>
+                            <circle cx="56" cy="38" r="8" fill="#0A2540" stroke="#5E6C84" stroke-width="2"/>
+                            <circle cx="56" cy="38" r="4" fill="#DFE1E6"/>
+                            <rect x="14" y="34" width="42" height="5" rx="2.5" fill="#0052CC"/>
+                            <rect x="18" y="35" width="34" height="2" fill="#4C9AFF"/>
+                            <path d="M56 38 L50 10" stroke="#0A2540" stroke-width="3.5" stroke-linecap="round"/>
+                            <path d="M50 10 L48 8" stroke="#0052CC" stroke-width="3.5" stroke-linecap="round"/>
+                            <line x1="42" y1="8" x2="56" y2="8" stroke="#0A2540" stroke-width="3" stroke-linecap="round"/>
+                            <polygon points="52,10 58,9 57,12" fill="#FFAB00"/>
+                        </svg>
+
+                        <div class="obstacle-sign-wrap">
+                            <svg class="obstacle-sign-svg" viewBox="0 0 100 100">
+                                <polygon points="30,5 70,5 95,30 95,70 70,95 30,95 5,70 5,30" fill="#DE350B" stroke="#FFFFFF" stroke-width="4.5"/>
+                                <polygon points="32,10 68,10 90,32 90,68 68,90 32,90 10,68 10,32" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+                                <text x="50" y="59" font-family="'Inter', sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">STOP</text>
+                            </svg>
+                            <div class="sign-pole"></div>
+                        </div>
+                    </div>
+
+                    <div class="game-metrics">
+                        <div class="metric-card">
+                            <div class="metric-num" id="metric-dist">1.8 м</div>
+                            <div class="metric-label">Тормозной путь</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-num" id="metric-time">0.3 сек</div>
+                            <div class="metric-label">Время остановки</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-num" id="metric-energy" style="color: var(--accent-red);">1346 Дж</div>
+                            <div class="metric-label">Энергия удара</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="anatomy">
+        <div class="container">
+            <div class="section-header">
+                <h2>Инженерное устройство защитного шлема</h2>
+                <p>Кликайте по слоям шлема на схеме для изучения их физико-механических свойств.</p>
+            </div>
+
+            <div class="helmet-inspector">
+                <div class="inspector-svg-wrap">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path id="svg-straps" class="helmet-part" d="M 100 110 L 80 160 L 100 180 L 120 160 Z" stroke-width="6" fill="none" stroke="#5E6C84" />
+                        <path id="svg-eps" class="helmet-part" d="M 50 110 Q 50 40 100 40 Q 150 40 150 110 Q 130 90 100 95 Q 70 90 50 110" fill="#DFE1E6" />
+                        <path id="svg-shell" class="helmet-part" d="M 45 110 Q 45 32 100 32 Q 155 32 155 110 L 150 110 Q 150 38 100 38 Q 50 38 50 110 Z" fill="#97A0AF" />
+                    </svg>
+                </div>
+
+                <div class="layer-tabs">
+                    <div class="layer-tab active" data-layer="shell">
+                        <h4>1. Поликарбонатный корпус</h4>
+                        <p>Жесткая внешняя оболочка. Принимает точечный контакт и обеспечивает скольжение шлема по твердому полотну, предотвращая резкий скручивающий момент шеи.</p>
+                    </div>
+                    <div class="layer-tab" data-layer="eps">
+                        <h4>2. Демпферный слой EPS</h4>
+                        <p>Вспененный пенополистирол высокой плотности. При ударе микрогранулы сминаются, поглощая до 80% кинетической энергии соударения.</p>
+                    </div>
+                    <div class="layer-tab" data-layer="straps">
+                        <h4>3. Фиксаторы Y-Strap</h4>
+                        <p>Анатомическая система регулировочных ремней. Надежно удерживает шлем на голове в фазе опрокидывания райдера.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formula-box">
+                <div class="formula-card">
+                    <div class="formula-digit">2</div>
+                    <h4>Два пальца</h4>
+                    <p>Край козырька шлема должен находиться строго на ширине двух пальцев выше линии бровей.</p>
+                </div>
+                <div class="formula-card">
+                    <div class="formula-digit" style="color: var(--primary-blue);">V</div>
+                    <h4>Буква V</h4>
+                    <p>Боковые ремешки должны смыкаться точно под мочкой уха, формируя симметричную букву «V».</p>
+                </div>
+                <div class="formula-card">
+                    <div class="formula-digit" style="color: var(--accent-green);">1</div>
+                    <h4>Один палец</h4>
+                    <p>Зазор между застегнутым подбородочным ремнем и шеей должен позволять плотно просунуть один палец.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="calculator">
+        <div class="container">
+            <div class="calc-wrapper">
+                <div class="section-header" style="margin-bottom: 20px;">
+                    <h2>Калькулятор подбора размера шлема</h2>
+                    <p>Измерьте окружность головы на 1.5–2 см выше бровей:</p>
+                </div>
+                
+                <div class="calc-form">
+                    <div class="input-group">
+                        <input type="number" id="headSize" min="46" max="65" placeholder="Например: 57" />
+                        <span class="input-unit">см</span>
+                    </div>
+                    <button class="btn btn--primary" id="btnCalculate">Рассчитать размер</button>
+                </div>
+
+                <div class="calc-result" id="calcResult" style="display: none;">
+                    <div class="calc-result__size" id="resultSize">M</div>
+                    <p class="calc-result__text" id="resultText"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="checklist">
+        <div class="container">
+            <div class="section-header">
+                <h2>Экспресс чек-лист перед выездом</h2>
+                <p>Проверьте базовые критерии безопасности перед началом поездки на СИМ или велосипеде.</p>
+            </div>
+
+            <div class="checklist-card">
+                <div class="check-item">
+                    <input type="checkbox" id="c1" class="check-box">
+                    <label for="c1"><strong>Посадка шлема:</strong> Шлем застегнут, закрывает лоб на 2 пальца выше бровей, сидит плотно.</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="c2" class="check-box">
+                    <label for="c2"><strong>Световые приборы:</strong> Передняя белая фара и задний габаритный огонь исправно работают.</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="c3" class="check-box">
+                    <label for="c3"><strong>Тормозная система:</strong> Ручной и ножной тормоз проверены на работоспособность.</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="c4" class="check-box">
+                    <label for="c4"><strong>Пешеходный переход:</strong> Помню главное правило: на зебре строго спешиваться и идти пешком.</label>
+                </div>
+                <div class="checklist-progress">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="checklist-message" id="progressMsg">Отметьте выполненные пункты безопасности</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="quiz">
+        <div class="container">
+            <div class="section-header">
+                <h2>Интерактивный разбор дорожных ситуаций</h2>
+                <p>Проверьте свою реакцию и знание ПДД в реальных дорожных кейсах.</p>
+            </div>
+
+            <div class="quiz-panel">
+                <div class="quiz-q-title" id="quiz-question">Загрузка кейса...</div>
+                <div class="quiz-answers" id="quiz-answers-box"></div>
+                <div class="quiz-info-msg" id="quiz-explanation"></div>
+                <div class="quiz-footer-btns">
+                    <button class="btn-quiz-action" id="quiz-btn-restart" style="background: var(--surface-subtle); color: var(--text-dark);">Попробовать снова</button>
+                    <button class="btn-quiz-action" id="quiz-btn-next">Следующий кейс</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                <p class="footer__copy">Шлем спасает жизнь: Цифровой гид по пассивной безопасности СИМ</p>
+                <p class="footer__sub">Интерактивный веб-ресурс по профилактике дорожно-транспортного травматизма</p>
+            </div>
+            <div class="footer__author-box">
+                <span>Автор и разработчик проекта:</span>
+                <strong>Зорина Арина Валерьевна</strong>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
